@@ -17,7 +17,7 @@ nfpms:
     description: Prometheus exporter for the metrics available in Logstash
     bindir: /usr/bin
     contents:
-      - src: /packaging/deb/systemd/logstash-exporter.service
+      - src: packaging/deb/systemd/logstash-exporter.service
         dst: /usr/lib/systemd/system/logstash-exporter.service
     formats:
       - deb
