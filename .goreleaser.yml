@@ -15,5 +15,9 @@ nfpms:
     maintainer: Dmitry Andreev <dmitry.andreev@insales.ru>
     vendor: InSales Rus LLC
     description: Prometheus exporter for the metrics available in Logstash
+    bindir: /usr/bin
+    contents:
+      - src: packaging/deb/systemd/logstash-exporter.service
+        dst: /usr/lib/systemd/system/logstash-exporter.service
     formats:
       - deb
