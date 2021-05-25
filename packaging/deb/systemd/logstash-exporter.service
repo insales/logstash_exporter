@@ -2,7 +2,6 @@
 Description=Prometheus exporter for the metrics available in Logstash
 
 [Service]
-EnvironmentFile=/etc/default/logstash-exporter
 ExecStart=/usr/bin/logstash-exporter
 Restart=on-failure
 
